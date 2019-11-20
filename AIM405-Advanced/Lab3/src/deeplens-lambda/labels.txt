@@ -1,0 +1,3 @@
+0 brown
+1 no
+2 polar
