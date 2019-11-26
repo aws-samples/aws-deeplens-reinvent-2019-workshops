@@ -47,7 +47,7 @@ This step is to clone the git repository of this workshop when the notebook inst
 Select "Clone a public Git repository to this notebook instance only" from the Repository selection list, and the put the below Git repository URL into the **Git repository URL** field.
 
 ```
-https://github.com/muhyun/deeplens-workshop
+https://github.com/aws-samples/aws-deeplens-reinvent-2019-workshops
 ```
 
 ![l400-lab0-5](./images/l400-lab0-5.png)
