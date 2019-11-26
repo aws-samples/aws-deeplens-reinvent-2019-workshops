@@ -151,7 +151,7 @@ def infinite_infer_run():
         input_width = 224
         
         model_type = 'classification'
-        model_name = 'image-classification'
+        model_name = 'mobilenet1.0-bear'
         
         with open('labels.txt', 'r') as f:
 	        output_map = [l.rstrip() for l in f]
@@ -352,7 +352,7 @@ def infinite_infer_run():
         input_width = 224
         
         model_type = 'classification'
-        model_name = 'image-classification'
+        model_name = 'mobilenet1.0-bear'
         
         with open('labels.txt', 'r') as f:
 	        output_map = [l.rstrip() for l in f]
