@@ -21,7 +21,18 @@ In your AWS DeepLens console, go to **Models** and click on **Import model**
 
 ![lab3-custom-model-1](images/lab3-custom-model-1.png)
 
-Select **Externally trained model**. 
+### (Option 1) Select **Amazon SageMaker trained model**. 
+
+Select the SageMaker training job for the model.
+
+Enter any model name.
+
+Then select **MXNet** as your model framework.
+
+![lab3-custom-model-2](images/lab3-custom-model-2-sagemaker.png)
+
+
+### (Option 2) Select **Externally trained model**. 
 
 Enter the path of your model in S3.
 
