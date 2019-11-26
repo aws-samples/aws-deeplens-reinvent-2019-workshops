@@ -133,7 +133,7 @@ def infinite_infer_run():
 
     try:     
         # Number of top classes to output
-        num_top_k = 5
+        num_top_k = 3
 
         # The height and width of the training set images
         input_height = 224
@@ -142,7 +142,7 @@ def infinite_infer_run():
         model_type = 'classification'
         model_name = 'image-classification'
         
-        with open('caltech256_labels.txt', 'r') as f:
+        with open('labels.txt', 'r') as f:
 	        output_map = [l.rstrip() for l in f]
 
         # Create a local display instance that will dump the image bytes to a FIFO
@@ -207,6 +207,7 @@ Inside the while loop we have the inference code:
                 raise Exception('Failed to get frame from the stream')
             # Resize frame to the same size as the training set.
             frame_resize = cv2.resize(frame, (input_height, input_width))
+	    frame_resize = frame_resize.astype('float32') / 255.0
             # Run the images through the inference engine and parse the results using
             # the parser API, note it is possible to get the output of doInference
             # and do the parsing manually, but since it is a classification model,
@@ -342,7 +343,7 @@ def infinite_infer_run():
         model_type = 'classification'
         model_name = 'image-classification'
         
-        with open('caltech256_labels.txt', 'r') as f:
+        with open('labels.txt', 'r') as f:
 	        output_map = [l.rstrip() for l in f]
 
         # Create a local display instance that will dump the image bytes to a FIFO
@@ -393,7 +394,7 @@ def infinite_infer_run():
 infinite_infer_run()
 ```
 
-By default, the output classes are numbers 0-256. To see more meaningful labels, we have the  **caltech256_labels.txt** file, a mapping between class number and label.
+By default, the output classes are numbers 0-2. To see more meaningful labels, we have the  **labels.txt** file, a mapping between class number and label.
 
 Choose **Save** to save the code you entered.
 
