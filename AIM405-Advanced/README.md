@@ -20,8 +20,8 @@ Agenda
 | 10:45-00:00 | Lab 1 - Labeling dataset using Amazon SageMaker Ground Truth | [link][1] |
 | 10:45-00:00 | Lab 2 - Train an image classification model using GluonCV    | [link][2] |
 | 10:45-00:00 | Lab 3 - Deploy custom model to AWS DeepLens                  | [link][3] |
-| 10:45-00:00 | Lab 4 - Optimizing models with Amazon SageMaker Neo          | [link][4] |
 | 12:00-13:00 | Q&A and Closing                                              |           |
+<!---| 10:45-00:00 | Lab 4 - Optimizing models with Amazon SageMaker Neo          | [link][4] |--->
 
 Q&A
 ---
