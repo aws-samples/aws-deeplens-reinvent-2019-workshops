@@ -6,7 +6,7 @@ Here are quick links to the labs:
 
 
 
-## [Lab 1: Deploy a sample project](Lab1-Deploy-sample-project)
+## [Lab 1: sample project](Lab1)
 
 
 
