@@ -447,3 +447,11 @@ Then click **Create** project.
 
 Deploying a custom project is the same as deploying the sample project. See this [tutorial](../../AIM229-Beginner/Lab1-Deploy-sample-project) on how.
 
+## 5. View Video Output
+
+There are a few ways to view video output from your device, if you have a monitor and keyboard plugged in, you can open a Terminal (Ctrl+Alt+T) and enter the following command:
+
+`mplayer -demuxer lavf -lavfdopts format=mjpeg:probesize=32 /tmp/results.mjpeg`
+
+See the [documentation](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-viewing-output.html) for other ways you can view the project stream.
+
