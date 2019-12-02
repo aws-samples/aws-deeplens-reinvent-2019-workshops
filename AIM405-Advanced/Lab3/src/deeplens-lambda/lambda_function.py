@@ -120,6 +120,7 @@ def infinite_infer_run():
                 raise Exception('Failed to get frame from the stream')
             # Resize frame to the same size as the training set.
             frame_resize = cv2.resize(frame, (input_height, input_width))
+            frame_resize = frame_resize.astype('float32') / 255
             # Run the images through the inference engine and parse the results using
             # the parser API, note it is possible to get the output of doInference
             # and do the parsing manually, but since it is a classification model,
