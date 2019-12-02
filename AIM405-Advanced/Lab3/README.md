@@ -68,6 +68,7 @@ Once the function is created, scroll down on the function's detail page and choo
 
 Upload the **deeplens-lambda.zip**.
 
+### You can jump to #3. 
 Let's walk through this code to make sure we understand what's going on:
 
 First we have a helper class for local display of the inference results. This helper class will help us stream the processed video frames to a local display or to your laptop via the web browser.
