@@ -48,7 +48,7 @@ You should see the page below
 
 ## 3. Run training notebook
 
-Navigate to the [Lab2 notebook](src/Image-classification-bear.ipynb) (AIM229 > Lab2 > Image-classification-bear.ipynb)
+Navigate to the [Lab2 notebook](src/Image-classification-bear.ipynb) (AIM229 > Lab2 > src > Image-classification-bear.ipynb)
 
 The only part of the code that you should modify is the bucket name. Change it to an Amazon S3 bucket that you've created with that starts with "deeplens" in its name.
 
