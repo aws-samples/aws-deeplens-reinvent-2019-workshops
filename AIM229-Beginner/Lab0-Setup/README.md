@@ -1,4 +1,5 @@
-# View video stream
+# (Optional) View video stream
+# Please proceed to Lab 1
 
 ## Option 1: View video stream from your laptop's browser
 

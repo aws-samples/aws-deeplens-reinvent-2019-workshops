@@ -68,6 +68,45 @@ Once the function is created, scroll down on the function's detail page and choo
 
 Upload the **deeplens-lambda.zip**.
 
+## 3. Create a custom AWS DeepLens project
+
+Inside the AWS DeepLens console, click on **Create Project**.
+
+Then select **Create a blank project**.
+
+![lab3-custom-project-1](images/lab3-custom-project-1.png)
+
+
+
+Then click **Add model** and select your model.
+
+![lab3-custom-project-2](images/lab3-custom-project-2.png)
+
+
+
+Then click **Add function** and search for your AWS Lambda function by name.
+
+![lab3-custom-project-3](images/lab3-custom-project-3.png)
+
+
+
+Then click **Create** project.
+
+
+
+## 4. Deploy the custom AWS DeepLens project
+
+Deploying a custom project is the same as deploying the sample project. See this [tutorial](../../AIM229-Beginner/Lab1-Deploy-sample-project) on how.
+
+## 5. View Video Output
+
+There are a few ways to view video output from your device, if you have a monitor and keyboard plugged in, you can open a Terminal (Ctrl+Alt+T) and enter the following command:
+
+`mplayer -demuxer lavf -lavfdopts format=mjpeg:probesize=32 /tmp/results.mjpeg`
+
+See the [documentation](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-viewing-output.html) for other ways you can view the project stream.
+
+## 6. DeepLens Lambda Deep Dive
 Let's walk through this code to make sure we understand what's going on:
 
 First we have a helper class for local display of the inference results. This helper class will help us stream the processed video frames to a local display or to your laptop via the web browser.
@@ -417,41 +456,5 @@ Enter a version number and click publish!
 
 
 
-## 3. Create a custom AWS DeepLens project
 
-Inside the AWS DeepLens console, click on **Create Project**.
-
-Then select **Create a blank project**.
-
-![lab3-custom-project-1](images/lab3-custom-project-1.png)
-
-
-
-Then click **Add model** and select your model.
-
-![lab3-custom-project-2](images/lab3-custom-project-2.png)
-
-
-
-Then click **Add function** and search for your AWS Lambda function by name.
-
-![lab3-custom-project-3](images/lab3-custom-project-3.png)
-
-
-
-Then click **Create** project.
-
-
-
-## 4. Deploy the custom AWS DeepLens project
-
-Deploying a custom project is the same as deploying the sample project. See this [tutorial](../../AIM229-Beginner/Lab1-Deploy-sample-project) on how.
-
-## 5. View Video Output
-
-There are a few ways to view video output from your device, if you have a monitor and keyboard plugged in, you can open a Terminal (Ctrl+Alt+T) and enter the following command:
-
-`mplayer -demuxer lavf -lavfdopts format=mjpeg:probesize=32 /tmp/results.mjpeg`
-
-See the [documentation](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-viewing-output.html) for other ways you can view the project stream.
 
