@@ -20,7 +20,8 @@ Select "Notebook instances" menu from the menu list on the left, and then click 
 
 #### Step 3. Notebok instance settings
 
-Put your notebook name into **Notebook instance name** field. And then, choose GPU ML instance type from the **Notebook instance type** list. GPU is needed because an image classification model using MobileNet will be trained. If you cannot choose GPU for some reason, you can still do the lab but the training will be much slower. 
+Put your notebook name into **Notebook instance name** field. And then, select a default t2 instance. 
+<!---choose GPU ML instance type from the **Notebook instance type** list. GPU is needed because an image classification model using MobileNet will be trained. If you cannot choose GPU for some reason, you can still do the lab but the training will be much slower. --->
 
 ![l400-lab0-3](./images/l400-lab0-3-2.png)
 
