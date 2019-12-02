@@ -445,5 +445,5 @@ Then click **Create** project.
 
 ## 4. Deploy the custom AWS DeepLens project
 
-Deploying a custom project is the same as deploying the sample project. See this [tutorial](../Lab1-Deploy-sample-project) on how.
+Deploying a custom project is the same as deploying the sample project. See this [tutorial](../../AIM229-Beginner/Lab1-Deploy-sample-project) on how.
 
