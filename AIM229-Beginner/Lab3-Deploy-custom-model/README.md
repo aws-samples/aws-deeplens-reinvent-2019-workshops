@@ -52,6 +52,41 @@ Once the function is created, scroll down on the function's detail page and choo
 
 Upload the **deeplens-lambda.zip**.
 
+Choose **Save** to save the code you entered.
+
+From the **Actions** dropdown menu list, choose **Publish new version**. Publishing the function makes it available in the AWS DeepLens console so that you can add it to your custom project.
+
+![lab3-custom-lambda-3](images/lab3-custom-lambda-3.png)
+
+Enter a version number and click publish!
+
+## 3. Create a custom AWS DeepLens project
+
+Inside the AWS DeepLens console, click on **Create Project**.
+
+Then select **Create a blank project**.
+
+![lab3-custom-project-1](images/lab3-custom-project-1.png)
+
+
+
+Then click **Add model** and select your model.
+
+![lab3-custom-project-2](images/lab3-custom-project-2.png)
+
+
+
+Then click **Add function** and search for your AWS Lambda function by name.
+
+![lab3-custom-project-3](images/lab3-custom-project-3.png)
+
+
+
+Then click **Create** project.
+
+
+## 4. DeepLens Lambda deep dive
+
 Let's walk through this code to make sure we understand what's going on:
 
 First we have a helper class for local display of the inference results. This helper class will help us stream the processed video frames to a local display or to your laptop via the web browser.
@@ -390,43 +425,11 @@ infinite_infer_run()
 
 By default, the output classes are numbers 0-256. To see more meaningful labels, we have the  **caltech256_labels.txt** file, a mapping between class number and label.
 
-Choose **Save** to save the code you entered.
-
-From the **Actions** dropdown menu list, choose **Publish new version**. Publishing the function makes it available in the AWS DeepLens console so that you can add it to your custom project.
-
-![lab3-custom-lambda-3](images/lab3-custom-lambda-3.png)
-
-Enter a version number and click publish!
 
 
 
-## 3. Create a custom AWS DeepLens project
 
-Inside the AWS DeepLens console, click on **Create Project**.
-
-Then select **Create a blank project**.
-
-![lab3-custom-project-1](images/lab3-custom-project-1.png)
-
-
-
-Then click **Add model** and select your model.
-
-![lab3-custom-project-2](images/lab3-custom-project-2.png)
-
-
-
-Then click **Add function** and search for your AWS Lambda function by name.
-
-![lab3-custom-project-3](images/lab3-custom-project-3.png)
-
-
-
-Then click **Create** project.
-
-
-
-## 4. Deploy the custom AWS DeepLens project
+## 5. Deploy the custom AWS DeepLens project
 
 Deploying a custom project is the same as deploying the sample project. See this [tutorial](../Lab1-Deploy-sample-project) on how.
 
