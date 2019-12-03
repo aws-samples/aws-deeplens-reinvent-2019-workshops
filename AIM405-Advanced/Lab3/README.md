@@ -68,6 +68,14 @@ Once the function is created, scroll down on the function's detail page and choo
 
 Upload the **deeplens-lambda.zip**.
 
+Choose **Save** to save the code you entered.
+
+From the **Actions** dropdown menu list, choose **Publish new version**. Publishing the function makes it available in the AWS DeepLens console so that you can add it to your custom project.
+
+![lab3-custom-lambda-3](images/lab3-custom-lambda-3.png)
+
+Enter a version number and click publish!
+
 ## 3. Create a custom AWS DeepLens project
 
 Inside the AWS DeepLens console, click on **Create Project**.
@@ -446,13 +454,7 @@ infinite_infer_run()
 
 By default, the output classes are numbers 0-2. To see more meaningful labels, we have the  **labels.txt** file, a mapping between class number and label.
 
-Choose **Save** to save the code you entered.
 
-From the **Actions** dropdown menu list, choose **Publish new version**. Publishing the function makes it available in the AWS DeepLens console so that you can add it to your custom project.
-
-![lab3-custom-lambda-3](images/lab3-custom-lambda-3.png)
-
-Enter a version number and click publish!
 
 
 
